@@ -42,6 +42,11 @@
     text-overflow: ellipsis;
 }
 
+.post__footer {
+    display: flex;
+    justify-content: space-between;
+}
+
 .post__social {
     display: flex;
     justify-content: space-between;
@@ -49,23 +54,23 @@
 }
 
 .post__like {
-    width: 18px;
-    height: 16px;
-    background-image: url('img/heart.svg');
-    background-color: transparent;
-    background-repeat: no-repeat;
-    background-position: center;
     cursor: pointer;
+    background-color: transparent;
+
+    svg {
+      width: 18px;
+      height: 16px;
+    }
 }
 
 .post__actions {
-    width: 14px;
-    height: 16px;
-    background-image: url('img/dots.svg');
-    background-color: transparent;
-    background-repeat: no-repeat;
-    background-position: center;
     cursor: pointer;
+    background-color: transparent;
+
+    svg {
+      width: 14px;
+      height: 16px;
+    }
 }
 
 .post_size_l {
@@ -74,13 +79,16 @@
     grid-template-areas:
         't'
         'i'
-        'd';
+        'd'
+        's';
     @media (min-width: $min-sm) {
         grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto 1fr 1fr auto;
         grid-template-areas:
             'i i t'
             'i i d'
-            'i i d';
+            'i i d'
+            'i i s';
     }
 
     .post__img {
@@ -89,7 +97,7 @@
     }
 
     .post__img img {
-        height: 243px;
+        height: auto;
     }
 
     .post__title-container {
@@ -101,10 +109,15 @@
     }
 
     .post__social {
-        grid-area: d;
-        position: absolute;
-        width: 100%;
-        bottom: 0;
+      width: 100%;
+    }
+
+    .post__footer {
+        grid-area: s;
+
+        svg {
+          fill: #d3d3d3;
+        }
     }
 }
 
@@ -130,7 +143,7 @@
     }
 
     .post__img img {
-        height: 220px;
+        height: 250px;
     }
 
     .post__descr {
@@ -146,12 +159,16 @@
         top: 0;
         right: 0;
         height: 100%;
+
+        svg {
+          fill: #d3d3d3;
+        }
     }
 }
 
 .post_size_s {
     grid-column: span 6;
-    grid-template-rows: repeat(3, auto);
+    grid-template-rows: auto 1fr auto;
     grid-template-areas:
         't'
         'd'
@@ -170,6 +187,10 @@
             bottom: 16px;
             right: 16px;
             height: 120px;
+
+            svg {
+              fill: #ffffff;
+            }
         }
     }
 
@@ -193,7 +214,6 @@
         }
 
         .post__author {
-            grid-area: s;
             display: block;
         }
 
@@ -201,11 +221,21 @@
             max-height: none;
         }
 
-        .post__social {
+        .post__footer {
+
             grid-area: s;
-            position: absolute;
-            right: 0;
-            bottom: 0;
+
+            @media (min-width: $min-md) {
+              position: absolute;
+              width: 100%;
+              bottom: 0;
+            }
+        }
+
+        .post__social {
+            svg {
+              fill: #d3d3d3;
+            }
         }
     }
 
@@ -222,5 +252,10 @@
 
     .post__descr {
         grid-area: d;
+        margin-bottom: 24px;
+
+        @media (min-width: $min-md) {
+          margin-bottom: 0;
+        }
     }
 }

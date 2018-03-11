@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "d824d92b217a099e5cc9"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "283493eb1efbc94c0c6e"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -722,7 +722,7 @@
 /******/ 	__webpack_require__.h = function() { return hotCurrentHash; };
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return hotCreateRequire(9)(__webpack_require__.s = 9);
+/******/ 	return hotCreateRequire(8)(__webpack_require__.s = 8);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -1183,13 +1183,13 @@ function updateLink (link, options, obj) {
 /* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var escape = __webpack_require__(6);
+var escape = __webpack_require__(10);
 exports = module.exports = __webpack_require__(0)(false);
 // imports
 
 
 // module
-exports.push([module.i, "@font-face {\n    font-family: 'YS Text';\n    src: url(" + escape(__webpack_require__(7)) + ");\n    src: url(" + escape(__webpack_require__(7)) + "?#iefix) format('embedded-opentype'),\n        url(" + escape(__webpack_require__(11)) + ") format('woff2'), url(" + escape(__webpack_require__(12)) + ") format('woff'),\n        url(" + escape(__webpack_require__(13)) + ") format('truetype'),\n        url(" + escape(__webpack_require__(14)) + "#YSText-Regular) format('svg');\n    font-weight: 400;\n    font-style: normal;\n}\n\n@font-face {\n    font-family: 'YS Text';\n    src: url(" + escape(__webpack_require__(8)) + ");\n    src: url(" + escape(__webpack_require__(8)) + "?#iefix) format('embedded-opentype'),\n        url(" + escape(__webpack_require__(15)) + ") format('woff2'), url(" + escape(__webpack_require__(16)) + ") format('woff'),\n        url(" + escape(__webpack_require__(17)) + ") format('truetype'), url(" + escape(__webpack_require__(18)) + "#YSText-Bold) format('svg');\n    font-weight: 700;\n    font-style: normal;\n}\n", ""]);
+exports.push([module.i, "@font-face {\n    font-family: 'YS Text';\n    font-weight: 400;\n    font-style: normal;\n\n    src: url(" + escape(__webpack_require__(6)) + ");\n    src: url(" + escape(__webpack_require__(6)) + "?#iefix) format('embedded-opentype'),\n        url(" + escape(__webpack_require__(11)) + ") format('woff2'), url(" + escape(__webpack_require__(12)) + ") format('woff'),\n        url(" + escape(__webpack_require__(13)) + ") format('truetype'),\n        url(" + escape(__webpack_require__(14)) + "#YSText-Regular) format('svg');\n}\n\n@font-face {\n    font-family: 'YS Text';\n    font-weight: 700;\n    font-style: normal;\n\n    src: url(" + escape(__webpack_require__(7)) + ");\n    src: url(" + escape(__webpack_require__(7)) + "?#iefix) format('embedded-opentype'),\n        url(" + escape(__webpack_require__(15)) + ") format('woff2'), url(" + escape(__webpack_require__(16)) + ") format('woff'),\n        url(" + escape(__webpack_require__(17)) + ") format('truetype'), url(" + escape(__webpack_require__(18)) + "#YSText-Bold) format('svg');\n}\n", ""]);
 
 // exports
 
@@ -1217,7 +1217,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, ".container {\n    padding: 0 8px;\n    width: 100%;\n    max-width: 396px;\n    margin: 0 auto;\n    -webkit-box-sizing: border-box;\n            box-sizing: border-box;\n}\n@media (min-width: 576px) {\n    .container {\n        max-width: 704px;\n    }\n}\n@media (min-width: 1400px) {\n    .container {\n        max-width: 966px;\n    }\n}\n.content {\n    display: grid;\n    grid-auto-flow: dense;\n    grid-template-columns: repeat(6, 1fr);\n    grid-column-gap: 16px;\n}\nbody {\n    font-family: 'YS Text';\n    margin: 0;\n}\na {\n    text-decoration: none;\n}\np {\n    margin: 0;\n}\nbutton {\n    margin: 0;\n    padding: 0;\n    border: none;\n}\nbutton:focus {\n    outline: none;\n}\n", ""]);
+exports.push([module.i, ".container {\n    -webkit-box-sizing: border-box;\n            box-sizing: border-box;\n    width: 100%;\n    margin: 0 auto;\n    padding: 0 8px;\n}\n@media (min-width: 468px) {\n    .container {\n        max-width: 704px;\n    }\n}\n@media (min-width: 1400px) {\n    .container {\n        max-width: 966px;\n    }\n}\n.content {\n    display: grid;\n\n    grid-auto-flow: dense;\n    grid-template-columns: repeat(6, 1fr);\n    grid-column-gap: 16px;\n}\nbody {\n    margin: 0;\n\n    font-family: 'YS Text';\n}\na {\n    text-decoration: none;\n}\np {\n    margin: 0;\n}\nbutton {\n    margin: 0;\n    padding: 0;\n\n    border: none;\n}\nbutton:focus {\n    outline: none;\n}\n", ""]);
 
 // exports
 
@@ -1226,56 +1226,33 @@ exports.push([module.i, ".container {\n    padding: 0 8px;\n    width: 100%;\n  
 /* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var escape = __webpack_require__(6);
 exports = module.exports = __webpack_require__(0)(false);
 // imports
 
 
 // module
-exports.push([module.i, ".post {\n    position: relative;\n    display: grid;\n    margin-bottom: 30px;\n}\n.post__title {\n    margin: 0;\n    padding-bottom: 2px;\n    font-size: 19px;\n    font-weight: 700;\n    line-height: 23px;\n    max-height: 69px;\n    background-color: #ffffff;\n    overflow: hidden;\n}\n.post__descr {\n    font-size: 14px;\n    line-height: 20px;\n    text-align: justify;\n    overflow: hidden;\n}\n.post__img {\n    font-size: 0;\n}\n.post__img img {\n    width: 100%;\n    -o-object-fit: cover;\n       object-fit: cover;\n    border-radius: 4px;\n}\n.post__author {\n    display: none;\n    font-weight: 700;\n    font-size: 14px;\n    overflow: hidden;\n    text-overflow: ellipsis;\n}\n.post__social {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-pack: justify;\n        -ms-flex-pack: justify;\n            justify-content: space-between;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n}\n.post__like {\n    width: 18px;\n    height: 16px;\n    background-image: url(" + escape(__webpack_require__(23)) + ");\n    background-color: transparent;\n    background-repeat: no-repeat;\n    background-position: center;\n    cursor: pointer;\n}\n.post__actions {\n    width: 14px;\n    height: 16px;\n    background-image: url(" + escape(__webpack_require__(24)) + ");\n    background-color: transparent;\n    background-repeat: no-repeat;\n    background-position: center;\n    cursor: pointer;\n}\n.post_size_l {\n    grid-column: span 6;\n    grid-column-gap: 16px;\n    grid-template-areas:\n        't'\n        'i'\n        'd';\n}\n@media (min-width: 576px) {\n    .post_size_l {\n        grid-template-columns: repeat(3, 1fr);\n        grid-template-areas:\n            'i i t'\n            'i i d'\n            'i i d';\n    }\n}\n.post_size_l .post__img {\n        grid-area: i;\n        margin-bottom: 0;\n}\n.post_size_l .post__img img {\n        height: 243px;\n}\n.post_size_l .post__title-container {\n        grid-area: t;\n}\n.post_size_l .post__descr {\n        grid-area: d;\n}\n.post_size_l .post__social {\n        grid-area: d;\n        position: absolute;\n        width: 100%;\n        bottom: 0;\n}\n.post_size_m {\n    grid-column: span 6;\n    grid-template-areas:\n        't'\n        'i'\n        'd';\n}\n@media (min-width: 576px) {\n    .post_size_m {\n        grid-column: span 3;\n    }\n}\n.post_size_m .post__title-container {\n        position: relative;\n        max-height: 23px;\n        margin: 0 0 8px;\n}\n.post_size_m .post__img {\n        margin-bottom: 8px;\n}\n.post_size_m .post__img img {\n        height: 220px;\n}\n.post_size_m .post__descr {\n        max-height: 60px;\n        overflow: hidden;\n        padding-right: 44px;\n}\n.post_size_m .post__social {\n        grid-area: d;\n        -webkit-box-orient: vertical;\n        -webkit-box-direction: normal;\n            -ms-flex-direction: column;\n                flex-direction: column;\n        position: absolute;\n        top: 0;\n        right: 0;\n        height: 100%;\n}\n.post_size_s {\n    grid-column: span 6;\n    grid-template-rows: repeat(3, auto);\n    grid-template-areas:\n        't'\n        'd'\n        's'\n}\n.post_size_s:not(.post_no-image) {\n    grid-template-areas:\n            't'\n            'i'\n            'i';\n}\n.post_size_s:not(.post_no-image) .post__social {\n            grid-area: i;\n            position: absolute;\n            -webkit-box-orient: vertical;\n            -webkit-box-direction: normal;\n                -ms-flex-direction: column;\n                    flex-direction: column;\n            bottom: 16px;\n            right: 16px;\n            height: 120px;\n}\n@media (min-width: 576px) {\n    .post_size_s {\n        grid-column: span 3;\n    }\n}\n@media (min-width: 966px) {\n    .post_size_s {\n        grid-column: span 2;\n    }\n}\n.post_size_s.post_no-image {\n    display: block;\n}\n.post_size_s.post_no-image .post__img {\n            display: none;\n}\n.post_size_s.post_no-image .post__actions {\n            margin-right: 24px;\n}\n.post_size_s.post_no-image .post__author {\n            grid-area: s;\n            display: block;\n}\n.post_size_s.post_no-image .post__title-container {\n            max-height: none;\n}\n.post_size_s.post_no-image .post__social {\n            grid-area: s;\n            position: absolute;\n            right: 0;\n            bottom: 0;\n}\n.post_size_s .post__title-container {\n        grid-area: t;\n        position: relative;\n        margin: 0 0 8px;\n        max-height: 46px;\n}\n.post_size_s .post__img {\n        grid-area: i;\n}\n.post_size_s .post__descr {\n        grid-area: d;\n}\n", ""]);
+exports.push([module.i, ".post {\n    position: relative;\n    display: grid;\n    margin-bottom: 30px;\n}\n.post__title {\n    margin: 0;\n    padding-bottom: 2px;\n    font-size: 19px;\n    font-weight: 700;\n    line-height: 23px;\n    max-height: 69px;\n    background-color: #ffffff;\n    overflow: hidden;\n}\n.post__descr {\n    font-size: 14px;\n    line-height: 20px;\n    text-align: justify;\n    overflow: hidden;\n}\n.post__img {\n    font-size: 0;\n}\n.post__img img {\n    width: 100%;\n    -o-object-fit: cover;\n       object-fit: cover;\n    border-radius: 4px;\n}\n.post__author {\n    display: none;\n    font-weight: 700;\n    font-size: 14px;\n    overflow: hidden;\n    text-overflow: ellipsis;\n}\n.post__footer {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-pack: justify;\n        -ms-flex-pack: justify;\n            justify-content: space-between;\n}\n.post__social {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-pack: justify;\n        -ms-flex-pack: justify;\n            justify-content: space-between;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n}\n.post__like {\n    cursor: pointer;\n    background-color: transparent;\n}\n.post__like svg {\n      width: 18px;\n      height: 16px;\n    }\n.post__actions {\n    cursor: pointer;\n    background-color: transparent;\n}\n.post__actions svg {\n      width: 14px;\n      height: 16px;\n    }\n.post_size_l {\n    grid-column: span 6;\n    grid-column-gap: 16px;\n    grid-template-areas:\n        't'\n        'i'\n        'd'\n        's';\n}\n@media (min-width: 468px) {\n    .post_size_l {\n        grid-template-columns: repeat(3, 1fr);\n        grid-template-rows: auto 1fr 1fr auto;\n        grid-template-areas:\n            'i i t'\n            'i i d'\n            'i i d'\n            'i i s';\n    }\n}\n.post_size_l .post__img {\n        grid-area: i;\n        margin-bottom: 0;\n}\n.post_size_l .post__img img {\n        height: auto;\n}\n.post_size_l .post__title-container {\n        grid-area: t;\n}\n.post_size_l .post__descr {\n        grid-area: d;\n}\n.post_size_l .post__social {\n      width: 100%;\n}\n.post_size_l .post__footer {\n        grid-area: s;\n}\n.post_size_l .post__footer svg {\n          fill: #d3d3d3;\n        }\n.post_size_m {\n    grid-column: span 6;\n    grid-template-areas:\n        't'\n        'i'\n        'd';\n}\n@media (min-width: 468px) {\n    .post_size_m {\n        grid-column: span 3;\n    }\n}\n.post_size_m .post__title-container {\n        position: relative;\n        max-height: 23px;\n        margin: 0 0 8px;\n}\n.post_size_m .post__img {\n        margin-bottom: 8px;\n}\n.post_size_m .post__img img {\n        height: 250px;\n}\n.post_size_m .post__descr {\n        max-height: 60px;\n        overflow: hidden;\n        padding-right: 44px;\n}\n.post_size_m .post__social {\n        grid-area: d;\n        -webkit-box-orient: vertical;\n        -webkit-box-direction: normal;\n            -ms-flex-direction: column;\n                flex-direction: column;\n        position: absolute;\n        top: 0;\n        right: 0;\n        height: 100%;\n}\n.post_size_m .post__social svg {\n          fill: #d3d3d3;\n        }\n.post_size_s {\n    grid-column: span 6;\n    grid-template-rows: auto 1fr auto;\n    grid-template-areas:\n        't'\n        'd'\n        's'\n}\n.post_size_s:not(.post_no-image) {\n    grid-template-areas:\n            't'\n            'i'\n            'i';\n}\n.post_size_s:not(.post_no-image) .post__social {\n            grid-area: i;\n            position: absolute;\n            -webkit-box-orient: vertical;\n            -webkit-box-direction: normal;\n                -ms-flex-direction: column;\n                    flex-direction: column;\n            bottom: 16px;\n            right: 16px;\n            height: 120px;\n}\n.post_size_s:not(.post_no-image) .post__social svg {\n              fill: #ffffff;\n            }\n@media (min-width: 468px) {\n    .post_size_s {\n        grid-column: span 3;\n    }\n}\n@media (min-width: 966px) {\n    .post_size_s {\n        grid-column: span 2;\n    }\n}\n.post_size_s.post_no-image {\n    display: block;\n}\n.post_size_s.post_no-image .post__img {\n            display: none;\n}\n.post_size_s.post_no-image .post__actions {\n            margin-right: 24px;\n}\n.post_size_s.post_no-image .post__author {\n            display: block;\n}\n.post_size_s.post_no-image .post__title-container {\n            max-height: none;\n}\n.post_size_s.post_no-image .post__footer {\n\n            grid-area: s;\n}\n@media (min-width: 768px) {\n    .post_size_s.post_no-image .post__footer {\n        position: absolute;\n        width: 100%;\n        bottom: 0;\n    }\n}\n.post_size_s.post_no-image .post__social svg {\n              fill: #d3d3d3;\n            }\n.post_size_s .post__title-container {\n        grid-area: t;\n        position: relative;\n        margin: 0 0 8px;\n        max-height: 46px;\n}\n.post_size_s .post__img {\n        grid-area: i;\n}\n.post_size_s .post__descr {\n        grid-area: d;\n        margin-bottom: 24px;\n}\n@media (min-width: 768px) {\n    .post_size_s .post__descr {\n        margin-bottom: 0;\n    }\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 /* 6 */
-/***/ (function(module, exports) {
-
-module.exports = function escape(url) {
-    if (typeof url !== 'string') {
-        return url
-    }
-    // If url is already wrapped in quotes, remove them
-    if (/^['"].*['"]$/.test(url)) {
-        url = url.slice(1, -1);
-    }
-    // Should url be wrapped?
-    // See https://drafts.csswg.org/css-values-3/#urls
-    if (/["'() \t\n]/.test(url)) {
-        return '"' + url.replace(/"/g, '\\"').replace(/\n/g, '\\n') + '"'
-    }
-
-    return url
-}
-
-
-/***/ }),
-/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "40f4030ec15fb0a45a9b06d0c43d59ed.eot";
 
 /***/ }),
-/* 8 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "e1048c6794d6c6f04ebeedf2d4ca6785.eot";
 
 /***/ }),
-/* 9 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(10);
+__webpack_require__(9);
 __webpack_require__(20);
 __webpack_require__(21);
 __webpack_require__(22);
@@ -1291,7 +1268,7 @@ const titleLengths = {
     l: 50
 };
 
-const data = __webpack_require__(25);
+const data = __webpack_require__(23);
 const container = document.querySelector('.js-content');
 const template = document.querySelector('#js-post-template');
 
@@ -1331,7 +1308,7 @@ data.default.map(row => {
 });
 
 /***/ }),
-/* 10 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
@@ -1360,6 +1337,28 @@ if(true) {
 	// When the module is disposed, remove the <style> tags
 	module.hot.dispose(function() { update(); });
 }
+
+/***/ }),
+/* 10 */
+/***/ (function(module, exports) {
+
+module.exports = function escape(url) {
+    if (typeof url !== 'string') {
+        return url
+    }
+    // If url is already wrapped in quotes, remove them
+    if (/^['"].*['"]$/.test(url)) {
+        url = url.slice(1, -1);
+    }
+    // Should url be wrapped?
+    // See https://drafts.csswg.org/css-values-3/#urls
+    if (/["'() \t\n]/.test(url)) {
+        return '"' + url.replace(/"/g, '\\"').replace(/\n/g, '\\n') + '"'
+    }
+
+    return url
+}
+
 
 /***/ }),
 /* 11 */
@@ -1599,18 +1598,6 @@ if(true) {
 
 /***/ }),
 /* 23 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "5387eb67a7cfb858d02e3857765e5175.svg";
-
-/***/ }),
-/* 24 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "729ecfd5afeb0965c4af6c362706b77b.svg";
-
-/***/ }),
-/* 25 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

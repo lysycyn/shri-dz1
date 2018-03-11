@@ -8,6 +8,16 @@
   <title>Яндекс Дзен - лента</title>
 </head>
 <body>
+  <svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="heart" viewBox="0 0 18 16">
+      <path d="M9 16C3 11.43 0 7.597 0 4.5 0 2.015 2.239 0 5 0c1.636 0 3.088.707 4 1.8C9.912.707 11.364 0 13 0c2.761 0 5 2.015 5 4.5 0 2.96-3 6.793-9 11.5z" fill-rule="evenodd"/>
+    </symbol>
+  </svg>
+  <svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="dots" viewBox="0 0 14 4">
+      <g><circle cx="2" cy="2" r="2"/><circle cx="7" cy="2" r="2"/><circle cx="12" cy="2" r="2"/></g>
+    </symbol>
+  </svg>
   <div class="container">
     <header class="header">
       <a href="">
@@ -29,8 +39,12 @@
       <div class="post__footer">
         <span class="post__author"></span>
         <div class="post__social">
-          <button class="post__actions"></button>
-          <button class="post__like"></button>
+          <button class="post__actions">
+            <svg><use xlink:href="#dots" /></svg>
+          </button>
+          <button class="post__like">
+            <svg><use xlink:href="#heart" /></svg>
+          </button>
         </div>
       </div>
     </div>
