@@ -7,7 +7,7 @@
         "start": "webpack-dev-server --progress --profile --colors",
         "build": "webpack",
         "comb": "./node_modules/.bin/csscomb static/style/*",
-        "lint": "eslint --ext=js",
+        "lint": "eslint --ext=js src/index.js",
         "precommit": "npm run lint && npm run comb",
         "prepush": "npm build"
     },
