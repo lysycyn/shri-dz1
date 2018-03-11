@@ -1,0 +1,6 @@
+{
+  "extends": "yandex",
+  "env": {
+    "browser": true
+  },
+}

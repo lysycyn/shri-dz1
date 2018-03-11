@@ -1,0 +1,7 @@
+.header {
+    padding: 20px 0;
+
+    @media (min-width: $min-lg) {
+        padding: 40px 0;
+    }
+}
