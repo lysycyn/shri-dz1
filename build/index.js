@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "592d1531c3812d50977e"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "d122c7a4de9d4dd77b6a"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -722,39 +722,11 @@
 /******/ 	__webpack_require__.h = function() { return hotCurrentHash; };
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return hotCreateRequire(4)(__webpack_require__.s = 4);
+/******/ 	return hotCreateRequire(6)(__webpack_require__.s = 6);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(2)(false);
-// imports
-
-
-// module
-exports.push([module.i, "@font-face {\n    font-family: 'YS Text';\n    src: url('/fonts/YS Text-Regular.eot');\n    src: url('/fonts/YS Text-Regular.eot?#iefix') format('embedded-opentype'),\n        url('/fonts/YS Text-Regular.woff2') format('woff2'), url('/fonts/YS Text-Regular.woff') format('woff'),\n        url('/fonts/YS Text-Regular.ttf') format('truetype'),\n        url('/fonts/YS Text-Regular.svg#YSText-Regular') format('svg');\n    font-weight: 400;\n    font-style: normal;\n}\n\n@font-face {\n    font-family: 'YS Text';\n    src: url('/fonts/YS Text-Bold.eot');\n    src: url('/fonts/YS Text-Bold.eot?#iefix') format('embedded-opentype'),\n        url('/fonts/YS Text-Bold.woff2') format('woff2'), url('/fonts/YS Text-Bold.woff') format('woff'),\n        url('/fonts/YS Text-Bold.ttf') format('truetype'), url('/fonts/YS Text-Bold.svg#YSText-Bold') format('svg');\n    font-weight: 700;\n    font-style: normal;\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-/* 1 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(2)(false);
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/***/ }),
-/* 2 */
 /***/ (function(module, exports) {
 
 /*
@@ -836,7 +808,7 @@ function toComment(sourceMap) {
 
 
 /***/ }),
-/* 3 */
+/* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -892,7 +864,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(6);
+var	fixUrls = __webpack_require__(8);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -1208,24 +1180,128 @@ function updateLink (link, options, obj) {
 
 
 /***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)(false);
+// imports
+
+
+// module
+exports.push([module.i, "@font-face {\n    font-family: 'YS Text';\n    src: url('/fonts/YS Text-Regular.eot');\n    src: url('/fonts/YS Text-Regular.eot?#iefix') format('embedded-opentype'),\n        url('/fonts/YS Text-Regular.woff2') format('woff2'), url('/fonts/YS Text-Regular.woff') format('woff'),\n        url('/fonts/YS Text-Regular.ttf') format('truetype'),\n        url('/fonts/YS Text-Regular.svg#YSText-Regular') format('svg');\n    font-weight: 400;\n    font-style: normal;\n}\n\n@font-face {\n    font-family: 'YS Text';\n    src: url('/fonts/YS Text-Bold.eot');\n    src: url('/fonts/YS Text-Bold.eot?#iefix') format('embedded-opentype'),\n        url('/fonts/YS Text-Bold.woff2') format('woff2'), url('/fonts/YS Text-Bold.woff') format('woff'),\n        url('/fonts/YS Text-Bold.ttf') format('truetype'), url('/fonts/YS Text-Bold.svg#YSText-Bold') format('svg');\n    font-weight: 700;\n    font-style: normal;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)(false);
+// imports
+
+
+// module
+exports.push([module.i, ".header {\n    padding: 20px 0;\n}\n@media (min-width: $min-lg) {\n    .header {\n        padding: 40px 0;\n    }\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
 /* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(5);
-__webpack_require__(7);
-const data = __webpack_require__(8);
+exports = module.exports = __webpack_require__(0)(false);
+// imports
 
-const container = document.querySelector('.js-container');
-console.log(data);
+
+// module
+exports.push([module.i, ".container {\n    padding: 0 8px;\n    width: 100%;\n    max-width: 396px;\n    margin: 0 auto;\n    -webkit-box-sizing: border-box;\n            box-sizing: border-box;\n}\n@media (min-width: 576px) {\n    .container {\n        max-width: 704px;\n    }\n}\n@media (min-width: 1400px) {\n    .container {\n        max-width: 966px;\n    }\n}\n.content {\n    display: grid;\n    grid-auto-flow: dense;\n    grid-template-columns: repeat(6, 1fr);\n    grid-column-gap: 16px;\n}\nbody {\n    font-family: 'YS Text';\n    margin: 0;\n}\na {\n    text-decoration: none;\n}\np {\n    margin: 0;\n}\nbutton {\n    margin: 0;\n    padding: 0;\n    border: none;\n}\nbutton:focus {\n    outline: none;\n}\n", ""]);
+
+// exports
+
 
 /***/ }),
 /* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
+exports = module.exports = __webpack_require__(0)(false);
+// imports
+
+
+// module
+exports.push([module.i, ".post {\n    position: relative;\n    display: grid;\n    margin-bottom: 30px;\n}\n.post__title {\n    margin: 0;\n    padding-bottom: 2px;\n    font-size: 19px;\n    font-weight: 700;\n    line-height: 23px;\n    max-height: 69px;\n    background-color: #ffffff;\n    overflow: hidden;\n}\n.post__descr {\n    font-size: 14px;\n    line-height: 20px;\n    text-align: justify;\n    overflow: hidden;\n}\n.post__img {\n    font-size: 0;\n}\n.post__img img {\n    width: 100%;\n    -o-object-fit: cover;\n       object-fit: cover;\n    border-radius: 4px;\n}\n.post__author {\n    display: none;\n    font-weight: 700;\n    font-size: 14px;\n    overflow: hidden;\n    text-overflow: ellipsis;\n}\n.post__social {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-pack: justify;\n        -ms-flex-pack: justify;\n            justify-content: space-between;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n}\n.post__like {\n    width: 18px;\n    height: 16px;\n    background-image: url('/img/heart.svg');\n    background-color: transparent;\n    background-repeat: no-repeat;\n    background-position: center;\n    cursor: pointer;\n}\n.post__actions {\n    width: 14px;\n    height: 16px;\n    background-image: url('/img/dots.svg');\n    background-color: transparent;\n    background-repeat: no-repeat;\n    background-position: center;\n    cursor: pointer;\n}\n.post_size_l {\n    grid-column: span 6;\n    grid-column-gap: 16px;\n    grid-template-areas:\n        't'\n        'i'\n        'd';\n}\n@media (min-width: 576px) {\n    .post_size_l {\n        grid-template-columns: repeat(3, 1fr);\n        grid-template-areas:\n            'i i t'\n            'i i d'\n            'i i d';\n    }\n}\n.post_size_l .post__img {\n        grid-area: i;\n        margin-bottom: 0;\n}\n.post_size_l .post__img img {\n        height: 243px;\n}\n.post_size_l .post__title-container {\n        grid-area: t;\n}\n.post_size_l .post__descr {\n        grid-area: d;\n}\n.post_size_l .post__social {\n        grid-area: d;\n        position: absolute;\n        width: 100%;\n        bottom: 0;\n}\n.post_size_m {\n    grid-column: span 6;\n    grid-template-areas:\n        't'\n        'i'\n        'd';\n}\n@media (min-width: 576px) {\n    .post_size_m {\n        grid-column: span 3;\n    }\n}\n.post_size_m .post__title-container {\n        position: relative;\n        max-height: 23px;\n        margin: 0 0 8px;\n}\n.post_size_m .post__img {\n        margin-bottom: 8px;\n}\n.post_size_m .post__img img {\n        height: 220px;\n}\n.post_size_m .post__descr {\n        max-height: 60px;\n        overflow: hidden;\n        padding-right: 44px;\n}\n.post_size_m .post__social {\n        grid-area: d;\n        -webkit-box-orient: vertical;\n        -webkit-box-direction: normal;\n            -ms-flex-direction: column;\n                flex-direction: column;\n        position: absolute;\n        top: 0;\n        right: 0;\n        height: 100%;\n}\n.post_size_s {\n    grid-column: span 6;\n    grid-template-rows: repeat(3, auto);\n    grid-template-areas:\n        't'\n        'd'\n        's'\n}\n.post_size_s:not(.post_no-image) {\n    grid-template-areas:\n            't'\n            'i'\n            'i';\n}\n.post_size_s:not(.post_no-image) .post__social {\n            grid-area: i;\n            position: absolute;\n            -webkit-box-orient: vertical;\n            -webkit-box-direction: normal;\n                -ms-flex-direction: column;\n                    flex-direction: column;\n            bottom: 16px;\n            right: 16px;\n            height: 120px;\n}\n@media (min-width: 576px) {\n    .post_size_s {\n        grid-column: span 3;\n    }\n}\n@media (min-width: 966px) {\n    .post_size_s {\n        grid-column: span 2;\n    }\n}\n.post_size_s.post_no-image {\n    display: block;\n}\n.post_size_s.post_no-image .post__img {\n            display: none;\n}\n.post_size_s.post_no-image .post__actions {\n            margin-right: 24px;\n}\n.post_size_s.post_no-image .post__author {\n            grid-area: s;\n            display: block;\n}\n.post_size_s.post_no-image .post__title-container {\n            max-height: none;\n}\n.post_size_s.post_no-image .post__social {\n            grid-area: s;\n            position: absolute;\n            right: 0;\n            bottom: 0;\n}\n.post_size_s .post__title-container {\n        grid-area: t;\n        position: relative;\n        margin: 0 0 8px;\n        max-height: 46px;\n}\n.post_size_s .post__img {\n        grid-area: i;\n}\n.post_size_s .post__descr {\n        grid-area: d;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(7);
+__webpack_require__(9);
+__webpack_require__(10);
+__webpack_require__(11);
+
+const descr_lengths = {
+    s: 150,
+    m: 160,
+    l: 180
+};
+const title_lengths = {
+    s: 50,
+    m: 80,
+    l: 50
+};
+
+const data = __webpack_require__(12);
+const container = document.querySelector('.js-content');
+const template = document.querySelector('#js-post-template');
+
+const setHeightSocials = social => {};
+
+data.default.map(row => {
+    const post = document.importNode(template.content, true);
+
+    post.querySelector('.post').classList.add(`post_size_${row.size}`);
+    const title = post.querySelector('.post__title');
+    if (row.title.length > title_lengths[row.size]) {
+        title.textContent = row.title.slice(0, title_lengths[row.size]) + '...';
+    } else {
+        title.textContent = row.title;
+    }
+
+    title.style.color = row.titleColor;
+    if (row.image) {
+        const imgBlock = post.querySelector('.post__img');
+        const img = document.createElement('img');
+        img.setAttribute('srcset', `${row.image2x} 800w, ${row.image3x} 1200w`);
+        img.setAttribute('src', row.image);
+        imgBlock.appendChild(img);
+    } else {
+        post.querySelector('.post').classList.add('post_no-image');
+        post.querySelector('.post__author').textContent = row.channelName;
+    }
+
+    const descr = post.querySelector('.post__descr');
+    if (row.description && row.description.length > descr_lengths[row.size]) {
+        descr.textContent = row.description.slice(0, descr_lengths[row.size]) + '...';
+    } else {
+        descr.textContent = row.description;
+    }
+
+    container.appendChild(post);
+});
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports, __webpack_require__) {
+
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(0);
+var content = __webpack_require__(2);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -1233,14 +1309,14 @@ var transform;
 var options = {"hmr":true}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(3)(content, options);
+var update = __webpack_require__(1)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(true) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept(0, function() {
-			var newContent = __webpack_require__(0);
+		module.hot.accept(2, function() {
+			var newContent = __webpack_require__(2);
 			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 			update(newContent);
 		});
@@ -1250,7 +1326,7 @@ if(true) {
 }
 
 /***/ }),
-/* 6 */
+/* 8 */
 /***/ (function(module, exports) {
 
 
@@ -1345,13 +1421,13 @@ module.exports = function (css) {
 
 
 /***/ }),
-/* 7 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1);
+var content = __webpack_require__(3);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -1359,14 +1435,14 @@ var transform;
 var options = {"hmr":true}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(3)(content, options);
+var update = __webpack_require__(1)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(true) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept(1, function() {
-			var newContent = __webpack_require__(1);
+		module.hot.accept(3, function() {
+			var newContent = __webpack_require__(3);
 			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 			update(newContent);
 		});
@@ -1376,7 +1452,69 @@ if(true) {
 }
 
 /***/ }),
-/* 8 */
+/* 10 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(4);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {"hmr":true}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__(1)(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(true) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept(4, function() {
+			var newContent = __webpack_require__(4);
+			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 11 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(5);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {"hmr":true}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__(1)(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(true) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept(5, function() {
+			var newContent = __webpack_require__(5);
+			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 12 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1461,7 +1599,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     title: 'Лучшие игрушки',
     titleColor: '#000000',
     description: 'Проверить это проще всего на примере мобилы. Если подарить ребенку игрушечный китайский телефон, то на него будет потрачено полтора дня внимания. А если подарить ребенку даже испорченный, но настоящий мобильник, то ребенок будет с ним играться бесконечно. То же самое касается и всех остальных игрушек. Дать ребенку возможность порезать юсб-провод ножницами иногда гораздо дороже и важнее, чем подарить радиоуправляемый экскаватор.',
-    size: 's'
+    size: 's',
+    channelName: 'Артемий Лебедев'
 }, {
     title: 'Исполнительница роли Молчуньи из MGS V в очередной раз намекнула на участие в Death Stranding',
     titleColor: '#5f4137',
