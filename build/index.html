@@ -4,16 +4,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="robots" content="noindex">
   <title>Яндекс Дзен - лента</title>
 </head>
 <body>
-  <header class="header"></header>
-  <div class="container js-content">
+  <div class="container">
+    <header class="header">
+      <a href="">
+        <img srcset="/img/zen_logo@2x.png 800w, /img/zen_logo@3x.png 1200w"  alt="Яндекс Дзен" src="/img/zen_logo.png"/>
+      </a>
+    </header>
+    <div class="content js-content"></div>
   </div>
   <template id="js-post-template">
     <div class="post">
-      <h2 class="post__title"></h2>
-      <p class="post__desc"></p>
+      <div class="post__title-container">
+        <a href="#">
+          <h2 class="post__title"></h2>
+        </a>
+      </div>
+      <div class="post__img"></div>
+
+      <p class="post__descr"></p>
+      <div class="post__footer">
+        <span class="post__author"></span>
+        <div class="post__social">
+          <button class="post__actions"></button>
+          <button class="post__like"></button>
+        </div>
+      </div>
     </div>
   </template>
 <script type="text/javascript" src="index.js"></script></body>
