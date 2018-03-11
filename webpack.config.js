@@ -31,7 +31,7 @@ module.exports = {
                 loader: 'style-loader!css-loader!postcss-loader',
             },
             {
-                test: /\.(png)$/,
+                test: /\.(png|woff|woff2|eot|svg|ttf)$/,
                 loader: 'file-loader',
             },
         ],

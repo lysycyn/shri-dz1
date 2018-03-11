@@ -51,7 +51,7 @@
 .post__like {
     width: 18px;
     height: 16px;
-    background-image: url('/img/heart.svg');
+    background-image: url('img/heart.svg');
     background-color: transparent;
     background-repeat: no-repeat;
     background-position: center;
@@ -61,7 +61,7 @@
 .post__actions {
     width: 14px;
     height: 16px;
-    background-image: url('/img/dots.svg');
+    background-image: url('img/dots.svg');
     background-color: transparent;
     background-repeat: no-repeat;
     background-position: center;
