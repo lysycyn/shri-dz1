@@ -3,12 +3,12 @@ require('./styles/header.css');
 require('./styles/main.css');
 require('./styles/post.css');
 
-const descr_lengths = {
+const descrLengths = {
     s: 150,
     m: 160,
     l: 180,
 };
-const title_lengths = {
+const titleLengths = {
     s: 50,
     m: 80,
     l: 50,
@@ -25,8 +25,8 @@ data.default.map(row => {
 
     post.querySelector('.post').classList.add(`post_size_${row.size}`);
     const title = post.querySelector('.post__title');
-    if (row.title.length > title_lengths[row.size]) {
-        title.textContent = row.title.slice(0, title_lengths[row.size]) + '...';
+    if (row.title.length > titleLengths[row.size]) {
+        title.textContent = row.title.slice(0, titleLengths[row.size]) + '...';
     } else {
         title.textContent = row.title;
     }
@@ -44,8 +44,8 @@ data.default.map(row => {
     }
 
     const descr = post.querySelector('.post__descr');
-    if (row.description && row.description.length > descr_lengths[row.size]) {
-        descr.textContent = row.description.slice(0, descr_lengths[row.size]) + '...';
+    if (row.description && row.description.length > descrLengths[row.size]) {
+        descr.textContent = row.description.slice(0, descrLengths[row.size]) + '...';
     } else {
         descr.textContent = row.description;
     }
