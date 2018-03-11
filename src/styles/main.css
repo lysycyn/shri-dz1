@@ -1,31 +1,33 @@
 @import 'var.css';
 
 .container {
-    padding: 0 8px;
+    box-sizing: border-box;
     width: 100%;
     max-width: 396px;
     margin: 0 auto;
-    box-sizing: border-box;
+    padding: 0 8px;
 
     @media (min-width: $min-sm) {
         max-width: 704px;
-    }
+}
 
     @media (min-width: $min-xl) {
         max-width: 966px;
-    }
+}
 }
 
 .content {
     display: grid;
+
     grid-auto-flow: dense;
     grid-template-columns: repeat(6, 1fr);
     grid-column-gap: 16px;
 }
 
 body {
-    font-family: 'YS Text';
     margin: 0;
+
+    font-family: 'YS Text';
 }
 
 a {
@@ -39,6 +41,7 @@ p {
 button {
     margin: 0;
     padding: 0;
+
     border: none;
 }
 
